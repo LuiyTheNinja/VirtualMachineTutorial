@@ -34,7 +34,7 @@ GO TO: File > Preferences > Extensions, and click the "+" icon to install the Ex
 <br/>
 (NOTE: Ensure that you do not allocate more than 50% of your host nachine's RAM)
 
-<h3>Create Virtual Hard Disk</h3>
+<h3>Step 2: Create Virtual Hard Disk</h3>
 <br/>
 - Choose "Create a virtual hard disk now" and click "Create"
 <br/>
@@ -47,3 +47,69 @@ GO TO: File > Preferences > Extensions, and click the "+" icon to install the Ex
 - Allocate at least 20 GB of disk space for Linux and 30 GB or more for Windows
 
 <h1>4. Configure Virtual Machine Settings</h1>
+<h3>Step 1: CPU Allocation</h3>
+<br/>
+- In the "System" tab, go to the "Processor" Tab.
+      - Allocate 2 CPU cores for general use. For advanced use or heavy software. 
+</br>
+      (Like cybersecurity tools or penetration test, in which you should allocate 4 cores if your machine supports it.)
+<br/>
+<h3>Step 2: Configure Display</h3>
+<br/>
+- In the "Display" tab, increase video memory to at least 128 MB for smooth performance
+<br/>
+(ESPECIALLY Important for Graphical User interface(GUI)-based Operating Systems))
+
+<h1>5. Download Operating System ISO Files</h1>
+<h3>Step 1: Get the ISO</h3>
+<br/>
+- For Linux OS(Ubuntu, Kali, Parrot, etc), download the ISO from the official website:
+    - [Kali Linux](https://www.kali.org/get-kali/#kali-virtual-machines)
+          -(NOTE: Do not use the Pre-built Virtual Machines for this tutorial, use "Installer Images")
+    - [Ubuntu](https://ubuntu.com/download)
+    - [ParrotOS](https://parrotsec.org/download/)
+<br/>
+- For Windows OS, you can download ISO files from the [Microsoft Website](https://www.microsoft.com/en-us/software-download/).
+
+<h1>6. Install the Operating System</h1>
+<br/>
+<h3>Step 1: Attach the ISO File</h3>
+<br/>
+- After Downloading the ISO file, Go to your Virtual Machine Settings. 
+<br/>
+- In the "Storage" section, click on the empty CD icon, then click the small CD icon on the right-hand side. 
+<br/>
+- Choose "Choose a disk file...", and select the ISO file you downloaded.
+
+<h3>Step 2: Start The Virtual Machine</h3>
+<br/>
+- Go back to the main VirtualBox window, select the VM, and click Start.
+- Follow the prompts to install the Operating System on the virtual Machine. 
+
+<h1>7. Post-Installation Configuration</h1>
+<br/>
+<h3>Step 1: Install Guest Additions(Option but Recommended)</h3>
+<br/>
+- Once the OS is installed, you can improve performance and usability by installing VirtualBox Guest Additions. 
+<br/>
+- In the running VM, go to Devices > Insert Guest Additions CD Image and follow the prompts to install. 
+<br/>
+This step will enhance screen resolution, clipboard sharing, and drag and drop between host and guest OS. 
+<br/>
+
+<h1>8. Networking Settings for Cybersecurity Labs</h1>
+<br/>
+<h3>Step 1: Configuring Network for Pentesting Labs</h3>
+<br/>
+- Go to the "Network" tab of your VM Settings. 
+<br/>
+- Select "Bridged Adapter" for real network interaction, which allows the VM to behave as if it's connected to your local network,
+<br/>
+useful for pentesting labs. 
+<br/>
+- For isolated testing, Choose "NAT" or "Internal Network" to create a safe, enclosed environment.
+<br/>
+
+<h1>9. Creating and Closing VM's for Lab Environments</h1>
+<br/>
+<h3>Step 1: Save a Baseline Image</h3>
