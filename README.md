@@ -110,6 +110,70 @@ useful for pentesting labs.
 - For isolated testing, Choose "NAT" or "Internal Network" to create a safe, enclosed environment.
 <br/>
 
-<h1>9. Creating and Closing VM's for Lab Environments</h1>
+<h1>9. Creating and Cloning VM's for Lab Environments</h1>
 <br/>
 <h3>Step 1: Save a Baseline Image</h3>
+<br/>
+- Once you've installed your Operating System and necessary software, you can create a "snapshot" in VirtualBox to save the state of your virtual machine.
+<br/>
+- Go to Machine > Take Snapshot to save the Virtual Machine State.
+<br/>
+<h3>Step 2: Clone a Virtual Machine</h3>
+<br/>
+- If you want to create identitcal VM's, with the same settings, you can clone the VM. 
+<br/>
+- Right-click on your VM in the main menu, select "Clone", and follow the prompts to create an identitcal copy.
+<br/>
+
+<h1>10. Suggested Settings for Cybersecurity VM's</h1>
+<br/>
+Here are some suggested resource allocations for common Operating Systems used in cybersecurity labs:
+<br/>
+<br/>
+Kali:
+<br/>
+<br/>
+      - RAM: 4 GB
+<br/>
+      - CPU: 2-4 Cores
+<br/>
+      - Disk: 25 GB
+<br/>
+<br/>
+
+Parrot OS: 
+<br/>
+<br/>
+      - RAM: 2-4 GB
+<br/>
+      - CPU: 2 Cores
+<br/>
+      - Disk: 20 GB
+<br/>
+<br/>
+Windows 11:
+<br/>
+<br/>
+      - RAM: 4-8 GB
+<br/>
+      - CPU: 4 Cores
+<br/>
+      - Disk: 30-40 GB
+<br/>
+
+<h1>11. Security Considerations</h1>
+<br/>
+<h3>Step 1: Isolate Your Lab</h3>
+<br/>
+- For any cybersecurity testing, it's good practice to isolate your VM's from the hose machine or external network.
+<br/>
+(Use Intermal Network mod for added Safety)
+<br/>
+<h3>Step 2: Take Regular Snapshots</h3>
+<br/>
+- Before running any experiments or pentesting tasks, always take snapshots of the current state of your VM, so you can roll back if something goes wrong. 
+<br/>
+
+<h1>12. Final Notes</h1>
+<br/>
+By following this guide, you can effectively set up virtual machines for cybersecurity labs. With proper configuration of resources, networking, and isolations, you'll have a flexible environment to test tools, practice penetration testing, and devlop skills for cybersecurity scenarios. 
