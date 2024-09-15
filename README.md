@@ -30,3 +30,20 @@ GO TO: File > Preferences > Extensions, and click the "+" icon to install the Ex
 <h1>3. Resource Allocation Settings</h1>
 <h3>Step 1: Allocate Memory</h3>
 <br/>
+- Allocate at least 2 GB of RAM for Linux Distributions, but 4GB OR higher is recommended for Windows or more resource-intensive tasks. 
+<br/>
+(NOTE: Ensure that you do not allocate more than 50% of your host nachine's RAM)
+
+<h3>Create Virtual Hard Disk</h3>
+<br/>
+- Choose "Create a virtual hard disk now" and click "Create"
+<br/>
+- Select the hard disk file type as VDI(Virtual Disk Image)
+<br/>
+- Select "Dynamically Allocated" For efficient use of space
+</br>
+(This allows the virtual hard disk to grow as needed)
+<br/>
+- Allocate at least 20 GB of disk space for Linux and 30 GB or more for Windows
+
+<h1>4. Configure Virtual Machine Settings</h1>
